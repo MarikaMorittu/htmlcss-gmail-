@@ -1,101 +1,84 @@
 /* GENERAL */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  font-family: sans-serif;
 }
 
 body {
-  background-color: #9984d4;
+  background: #9984d4;
 }
-/* contenitore */
+
+/* Utilities */
 .container {
-  width: 70%;
-  background-color: white;
+  width: 45%;
+  background: #f9f6f9;
   margin: 48px auto;
-  padding: 25px;
-  font-size: 28px;
+  padding: 16px;
 }
-/* Inserimento logo */
-.logo {
-  height: 150px;
-  vertical-align: middle;
-  margin: 0 10px;
-}
-/* Intestazione */
-header {
-  display: inline-block;
-  line-height: 80px;
-  font-size: 25px;
+.textuppercase {
   text-transform: uppercase;
 }
+/* Header */
+header {
+  border-bottom: 2px solid #9984d4; /* creazione alternativa linea usando i border */
+}
+.logo img {
+  height: 110px;
+  vertical-align: middle; /* allinea immagine al centro*/
+  margin-right: 8px;
+}
 
-.text {
-  height: 35px;
-  width: 250px;
-  border: 2px solid black;
-  font-size: 20px;
+.logo {
+  text-transform: uppercase; /* testo in maiuscolo */
+  font-weight: 700; /* testo in grassetto*/
 }
-/* Personalizzazione hr */
-hr {
-  background-color: #9984d4;
-  height: 3px;
-}
-/* section 1 */
-.section1 {
-  margin: 10px;
-}
-/* modifiche 30 */
-.hl {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  background-color: #9984d4;
+/*.fb{
+     font-weight: 700;
+ }*/
+
+.badge {
+  background: #9984d4;
   border-radius: 50%;
+  color: #fff;
   display: inline-block;
-  color: white;
-}
-
-/* elenchi */
-.hl2 {
-  background-color: rgba(195, 192, 192, 0.954);
-  display: block;
-  height: 60px;
-  line-height: 60px;
-}
-/* Elenco non evidenziato */
-.nonln {
-  height: 60px;
-  line-height: 60px;
-  background-color: white;
-  display: block;
-}
-
-/* section 2 */
-.section2 {
-  margin: 40px 0;
-}
-/* Personalizzazione pulsante*/
-.vai {
-  background-color: rgb(223, 214, 214);
-  height: 35px;
-  width: 40px;
-  border-radius: 10%;
-}
-/* Personalizzazione check */
-.check {
-  height: 26px;
-  width: 26px;
-  vertical-align: middle;
-  margin: 12px;
-}
-
-/* foother */
-footer {
+  height: 48px;
+  width: 48px;
+  line-height: 48px;
   text-align: center;
-  margin-bottom: 200px;
-  margin-top: 20px;
-  font-size: 20px;
+}
+.search div {
+  margin-top: 8px;
+}
+
+.search {
+  padding: 24px 8px;
+  border-bottom: 2px solid #9984d4;
+}
+/* email */
+.email {
+  background: #c4c4c4;
+  padding: 0 8px;
+  width: 100%;
+  height: 30px;
+  line-height: 32px;
+}
+.email span {
+  margin-right: 4px;
+}
+
+.toread {
+  background: #f9f6f9;
+}
+.emails {
+  padding: 16px 0;
+  border-bottom: 2px solid #9984d4;
+}
+/* Footer */
+footer {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 16px;
+  margin-bottom: 100px;
 }
